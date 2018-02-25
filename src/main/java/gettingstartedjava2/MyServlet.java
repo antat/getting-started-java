@@ -2,7 +2,6 @@ package gettingstartedjava2;
 
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -22,12 +21,7 @@ public class MyServlet extends HttpServlet {
 	    response.setContentType("text/plain");
 	    response.setCharacterEncoding("UTF-8");
 
-	    
-	    
-	    PrintWriter pw = response.getWriter();
-        pw.println("<H1>Hello, world! или Привет мир</H1>");
-        
-      //response.getWriter().print("Мой сервлет!\r\n");
+		response.getWriter().print("Мой сервлет!\r\n");
  
 
 	  }
